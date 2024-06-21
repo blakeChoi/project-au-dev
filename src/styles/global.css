@@ -1,0 +1,30 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  background-color: #f5f6f8;
+}
+
+@keyframes ripple {
+  to {
+    transform: scale(4);
+    opacity: 0;
+  }
+}
+
+.animate-ripple {
+  animation: ripple 200ms linear;
+}
+
+* {
+  --rdp-cell-size: 40px;
+  --rdp-caption-font-size: 18px;
+  --rdp-accent-color: #2aac73;
+  --rdp-accent-color-dark: #2aac73;
+  --rdp-background-color: #a4ffab5e;
+  --rdp-background-color-dark: #180270;
+  --rdp-outline: 2px solid #2aac73;
+  --rdp-outline-selected: 3px solid #2aac73;
+  --rdp-selected-color: #fff;
+}
